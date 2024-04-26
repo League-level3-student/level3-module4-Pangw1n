@@ -130,7 +130,7 @@ public class Hangman implements KeyListener {
 				return;
 			}
 			
-			if (word.contains("" + arg0.getKeyChar()))
+			if (word.indexOf(arg0.getKeyChar()) != -1)
 			{
 				guessedList.add(arg0.getKeyChar());
 			}
